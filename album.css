@@ -53,3 +53,12 @@ footer p {
     max-width: 32;
     max-height: 32;
 }
+
+.bg-black {
+    background-color: black;
+}
+
+.social-link {
+    float: none;
+    display: inline-block;
+}
