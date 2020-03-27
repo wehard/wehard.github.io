@@ -10,6 +10,7 @@
         <link href="bootstrap/css/bootstrap.css" rel="stylesheet">
         <!-- Custom styles for this template -->
         <link href="album.css" rel="stylesheet">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Abel&display=swap">
     </head>
     <body>
         <header>
@@ -17,36 +18,33 @@
                 <div class="container">
                     <div class="row">
                         <div class="col-sm-8 col-md-7 py-4">
-                            <h4 class="text-white">About</h4>
-                            <p class="text-muted">Some info.</p>
-                        </div>
-                        <div class="col-sm-4 offset-md-1 py-4">
-                            <h4 class="text-white">Contact</h4>
+</div>
+                        <div class="col-sm-4 d-inline-flex justify-content-end offset-md-1 py-4">
                             <ul class="list-unstyled">
-                                <div class="flex-row">
-                                    <div class="pr-2 social-link">
+                                <div class="align-items-center">
+                                    <div class="social-link">
                                         <a href="https://twitter.com/willehard"><img src="assets/images/Twitter_Social_Icon_Circle_Color.png" id="rtv1" width="28" height="28"></a>
                                     </div>
-                                    <div class="pr-2 social-link">
+                                    <div class="social-link">
                                         <a href="https://linkedin.com/in/willehard"><img id="rtv1" src="assets/images/LI-In-Bug.png" width="32" height="32"></a>
                                     </div>
-                                    <div class="pr-2 social-link">
+                                    <div class="social-link">
                                         <a href="https://github.com/wehard/"><img src="assets/images/github.png" width="32" height="32"></a>
                                     </div>
                                 </div>
                                 <li>
 </li>
-                                <li>
-                                    <a href="#" class="text-white">willehard@gmail.com</a>
-                                </li>
                             </ul>
                         </div>
                     </div>
                 </div>
             </div>
             <div class="bg-dark box-shadow navbar navbar-dark">
-                <div class="container d-flex justify-content-between">
-                    <a href="#" class="navbar-brand d-flex align-items-center"> </a>
+                <div class="container">
+                    <div class="d-inline-flex">
+                        <a class="menu-item-text pr-3 text-light" data-toggle="modal" data-target="#aboutme">About</a>
+                        <a class="menu-item-text pr-3 text-light" data-toggle="modal" data-target="#abouthive">Hive</a>
+                    </div>
                     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarHeader" aria-controls="navbarHeader" aria-expanded="false" aria-label="Toggle navigation">
                         <span class="navbar-toggler-icon"></span>
                     </button>
@@ -67,7 +65,7 @@
                     </div>
                 </div>
             </div>
-            <div class="album bg-light mt-0 py-3">
+            <div class="album bg-light mt-0 py-3" id="projects">
                 <div class="container py-5 text-dark">
                     <h3 class="jumbotron-heading text-center">Projects</h3>
                     <h6 class="jumbotron-heading pt-1 text-center">A collection of some of my completed projects during my studies at Hive Helsinki coding school as well as some of my personal projects.</h6>
@@ -273,6 +271,48 @@
                 <p class="float-right"> <a href="#">Back to top</a> </p>
             </div>
         </footer>
+        <div class="modal fade pg-show-modal" id="aboutme" tabindex="-1" role="dialog" aria-hidden="true"> 
+            <div class="modal-dialog modal-lg"> 
+                <div class="modal-content"> 
+                    <div class="modal-header"> 
+                        <h4 class="modal-title">About me</h4> 
+                        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>                         
+                    </div>                     
+
+                    <div class="modal-body"> 
+                        <p>I graduated as Master of Arts in 2007 and currently a student at Hive
+Helsinki coding school. In addition to working in the theatre I also have
+experience in video-editing, animation and motion graphics. Currently
+transitioning to the software development industry with a strong
+passion for computer graphics. Looking for an internship position in the
+areas of visual and parallel computing, working with modern graphics
+APIs and real-time data visualisation.</p> 
+                    </div>                     
+
+                    <div class="modal-footer"> 
+                        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>                                                  
+                    </div>                     
+                </div>                 
+            </div>             
+        </div>
+        <div class="fade modal pg-show-modal" id="abouthive" tabindex="-1" role="dialog" aria-hidden="true"> 
+            <div class="modal-dialog modal-lg"> 
+                <div class="modal-content"> 
+                    <div class="modal-header"> 
+                        <h4 class="modal-title">Hive Helsinki</h4> 
+                        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>                         
+                    </div>                     
+
+                    <div class="modal-body"> 
+                        <p><p>Hive is a new kind of coding school in Helsinki, based on the revolutionary education model of the French school Ecole 42.</p><p>Founded in 2013 by tech entrepreneur and visionary Xavier Niel, 42 disrupted education by building a school without the traditional teacher-student model, focusing on peer-to-peer collaboration, problem-solving and creativity. The impressive results (100% of graduates well-employed, 50% of which had no coding experience) have inspired others around the world to replicate the model with success. In July 2019, Hive opened its doors in Finland and is the first school of its kind in the Nordics.</p><p><a href="http://www.hive.fi">http://www.hive.fi</a></p><p></p></p> 
+                    </div>                     
+
+                    <div class="modal-footer"> 
+                        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>                                                  
+                    </div>                     
+                </div>                 
+            </div>             
+        </div>
         <!-- Bootstrap core JavaScript
         ================================================== -->
         <!-- Placed at the end of the document so the pages load faster -->

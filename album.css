@@ -62,3 +62,12 @@ footer p {
     float: none;
     display: inline-block;
 }
+
+.menu-item-text {
+    font-size: 25;
+}
+
+.menu-item-text {
+    font-size: 20px;
+    cursor: pointer;
+}
